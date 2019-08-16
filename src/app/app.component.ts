@@ -10,7 +10,7 @@ export class AppComponent {
   title = 'weather';
   constructor(private weatherService:CurrentWeatherService){}
 
-  ngOnInit(): void {
+  ngOnInit(){
     //se ejecuta cuando el componente esta listo
     // el weather$ observable que recibe los mismo datos de la peticion htto
     this.weatherService.weather$.subscribe(console.log)
